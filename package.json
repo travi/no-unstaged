@@ -2,13 +2,14 @@
   "name": "no-unstaged",
   "description": "cli tool to ensure all changes are staged",
   "version": "0.0.0-semantically-released",
-  "main": "lib/index.cjs.js",
-  "module": "lib/index.es.js",
   "license": "MIT",
   "repository": "travi/no-unstaged",
   "bugs": "https://github.com/travi/no-unstaged/issues",
   "homepage": "https://npm.im/no-unstaged",
   "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
+  "bin": {
+    "no-unstaged": "bin/no-unstaged.js"
+  },
   "scripts": {
     "clean": "rimraf lib/",
     "lint:js": "eslint . --cache",
@@ -42,6 +43,8 @@
     "nyc": "^12.0.2",
     "rimraf": "^2.6.2",
     "rollup": "^0.61.2",
+    "rollup-plugin-auto-external": "^1.2.0",
+    "rollup-plugin-executable": "^1.2.0",
     "sinon": "^6.0.1",
     "travis-lint": "^1.0.0"
   }

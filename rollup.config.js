@@ -1,9 +1,12 @@
 /* eslint import/no-extraneous-dependencies: ['error', {'devDependencies': true}] */
+import executable from 'rollup-plugin-executable';
+import autoExternal from 'rollup-plugin-auto-external';
 
 export default {
   input: 'src/index.js',
-  output: [
-    {file: 'lib/index.cjs.js', format: 'cjs', sourcemap: true},
-    {file: 'lib/index.es.js', format: 'es', sourcemap: true}
-  ]
+  plugins: [
+    executable(),
+    autoExternal()
+  ],
+  output: [{file: 'bin/no-unstaged.js', format: 'cjs', sourcemap: true, banner: '#!/usr/bin/env node'}]
 };
