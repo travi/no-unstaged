@@ -1,9 +1,7 @@
 language: node_js
 notifications:
   email: false
-install:
-- npm install
-- gem install travis
+install: case $TRAVIS_BRANCH in greenkeeper*) npm i;; *) npm ci;; esac;
 before_script: npm run greenkeeper:update-lockfile
 after_script: npm run greenkeeper:upload-lockfile
 env:
