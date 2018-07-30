@@ -43,7 +43,7 @@
     "nyc": "^12.0.2",
     "rimraf": "^2.6.2",
     "rollup": "^0.61.2",
-    "rollup-plugin-auto-external": "^1.2.0",
+    "rollup-plugin-auto-external": "^2.0.0",
     "rollup-plugin-executable": "^1.2.0",
     "sinon": "^6.0.1",
     "travis-lint": "^1.0.0"
