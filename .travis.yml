@@ -5,7 +5,7 @@ branches:
   except:
     - /^v\d+\.\d+\.\d+(-(alpha|beta)\.\d+(@(alpha|beta))?)?$/
 
-before_script: npm ls --production >/dev/null
+before_script: npm ls >/dev/null
 after_success: npm run coverage:report
 
 deploy:
