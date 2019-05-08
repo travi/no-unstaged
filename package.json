@@ -14,7 +14,7 @@
     "clean": "rimraf lib/",
     "lint:js": "eslint . --cache",
     "lint:travis": "travis-lint .travis.yml",
-    "test": "run-s lint:* test:*",
+    "test": "run-s lint:* test:* build",
     "test:unit:base": "mocha --recursive test/unit",
     "test:unit": "nyc run-s test:unit:base",
     "coverage:report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
@@ -47,6 +47,7 @@
     "rimraf": "^2.6.2",
     "rollup": "^1.8.0",
     "rollup-plugin-auto-external": "^1.2.0",
+    "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-executable": "^1.2.0",
     "sinon": "^7.3.2",
     "travis-lint": "^1.0.0"
