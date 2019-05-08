@@ -5,15 +5,45 @@ cli tool to ensure all changes are staged
 <!-- status badges -->
 [![Build Status][ci-badge]][ci-link]
 
+## Usage
+
 <!-- consumer badges -->
 [![npm][npm-badge]][npm-link]
 [![MIT license][license-badge]][license-link]
+
+### Installation
+
+
+```sh
+$ npm install no-unstaged --save-dev
+```
+
+## Contributing
 
 <!-- contribution badges -->
 [![Conventional Commits][commit-convention-badge]][commit-convention-link]
 [![Commitizen friendly][commitizen-badge]][commitizen-link]
 [![PRs Welcome][PRs-badge]][PRs-link]
 [![Greenkeeper badge](https://badges.greenkeeper.io/travi/no-unstaged.svg)](https://greenkeeper.io/)
+
+### Dependencies
+
+```sh
+$ nvm install
+$ npm install
+```
+
+### Executing Locally Without Bundling
+
+```sh
+$ npx babel-node src/index.js
+```
+
+### Verification
+
+```sh
+$ npm test
+```
 
 [npm-link]: https://www.npmjs.com/package/no-unstaged
 [npm-badge]: https://img.shields.io/npm/v/no-unstaged.svg
