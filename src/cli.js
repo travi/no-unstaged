@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from '../thirdparty-wrappers/ink';
-import HelloWorld from './hello-world';
+import UnStaged from './un-staged';
 
 export default function () {
-  render(<HelloWorld />);
+  render(<UnStaged />);
 }

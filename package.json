@@ -54,6 +54,7 @@
   },
   "dependencies": {
     "ink": "^2.1.1",
+    "ink-spinner": "^3.0.1",
     "react": "^16.8.6"
   }
 }

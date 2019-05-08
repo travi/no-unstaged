@@ -3,7 +3,7 @@ import sinon from 'sinon';
 import {assert} from 'chai';
 import any from '@travi/any';
 import * as ink from '../../thirdparty-wrappers/ink';
-import HelloWorld from '../../src/hello-world';
+import UnStaged from '../../src/un-staged';
 import cli from '../../src/cli';
 
 suite('cli', () => {
@@ -20,7 +20,7 @@ suite('cli', () => {
 
   test('that the ink component gets rendered', () => {
     const renderedComponent = any.simpleObject();
-    React.createElement.withArgs(HelloWorld).returns(renderedComponent);
+    React.createElement.withArgs(UnStaged).returns(renderedComponent);
 
     cli();
 
