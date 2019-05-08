@@ -30,9 +30,9 @@
     "bin/"
   ],
   "devDependencies": {
+    "@babel/register": "^7.4.4",
+    "@travi/babel-preset": "^3.0.0",
     "@travi/eslint-config-travi": "^1.8.0",
-    "babel-preset-travi": "^1.4.2",
-    "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "codecov": "^3.0.2",
     "commitlint-config-travi": "^1.2.30",
