@@ -1,12 +1,12 @@
-import React, {Fragment} from 'react';
-import {Color} from 'ink';
+import React from 'react';
+import {Color, Text} from 'ink';
 import Spinner from 'ink-spinner';
 
 export default function UnStaged() {
   return (
-    <Fragment>
+    <Color cyan>
       <Spinner type="dots" />
-      <Color green>Confirming that all changes have been staged</Color>
-    </Fragment>
+      <Text> Confirming that all changes have been staged</Text>
+    </Color>
   );
 }
