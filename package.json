@@ -44,7 +44,7 @@
     "rimraf": "^2.6.2",
     "rollup": "^1.8.0",
     "rollup-plugin-auto-external": "^1.2.0",
-    "rollup-plugin-executable": "^1.2.0",
+    "rollup-plugin-executable": "^1.5.3",
     "sinon": "^7.3.2",
     "travis-lint": "^1.0.0"
   }
